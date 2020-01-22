@@ -9,7 +9,7 @@ pytest-cov = "*"
 pytest-django = "*"
 
 [packages]
-django = "==2.2"
+django = "==2.2.9"
 requests = "*"
 grequests = "*"
 
