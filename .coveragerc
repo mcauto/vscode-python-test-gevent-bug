@@ -1,0 +1,21 @@
+# https://coverage.readthedocs.io/en/coverage-4.2/config.html#
+
+[run]
+branch=False
+source = app/
+omit = 
+    .venv/*
+    app/tests/*
+    app/manage.py
+    app/confs/*
+
+
+[tool:pytest]
+testpaths = app/tests/
+addopts = --cov-append --cov-report=xml:cov.xml --cov-report=html
+
+[html]
+directory = public/coverage
+
+[xml]
+output = cov.xml
